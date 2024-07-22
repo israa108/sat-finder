@@ -17,14 +17,15 @@
     padding: 20px 40px;
     max-width: 140%;
     transition: 0.3s;
-    opacity: 0.5;
-    filter: grayscale(100);
+    /* opacity: 0.5;
+    filter: grayscale(100); */
 }
 
-.clients .client-logo img:hover {
+
+/* .clients .client-logo img:hover {
     filter: none;
     opacity: 1;
-}
+} */
 
 @media (max-width: 640px) {
     .clients .client-logo img {

@@ -10,10 +10,17 @@ import { OjoModule } from "./ojo/ojo.module";
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./shared/navbar/navbar.component";
 import { FooterComponent } from "./shared/footer/footer.component";
-import { BrandsComponent } from './shared/brands/brands.component';
+import { BrandsComponent } from "./shared/brands/brands.component";
+import { UsersComponent } from './shared/users/users.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, BrandsComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    BrandsComponent,
+    UsersComponent,
+  ],
   imports: [
     BrowserAnimationsModule,
     NgbModule,
