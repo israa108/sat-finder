@@ -35,7 +35,10 @@
                     "configurations": {
                         "production": {
                             "scripts": true,
-                            "styles": true,
+                            "styles": {
+                                "minify": true,
+                                "inlineCritical": false
+                            },
                             "fonts": false,
                             "optimization": false,
                             "outputHashing": "all",
@@ -127,7 +130,7 @@
             }
         }
     },
-    "defaultProject": "now-ui-kit-angular",
+    "defaultProject": "sat-finder",
     "schematics": {
         "schematics": {
             "@schematics/angular:component": {
