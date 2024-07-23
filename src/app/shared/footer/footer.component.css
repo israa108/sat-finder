@@ -6,6 +6,11 @@ ul {
 .footer-section {
     background: #151414;
     position: relative;
+    background-image: url('assets/highway.gif');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    overflow: initial;
 }
 
 .footer-cta {
@@ -13,7 +18,7 @@ ul {
 }
 
 .single-cta i {
-    color: teal;
+    color: #004c4c;
     font-size: 30px;
     float: left;
     margin-top: 8px;
@@ -32,7 +37,7 @@ ul {
 }
 
 .cta-text span {
-    color: #757575;
+    color: #fff;
     font-size: 15px;
 }
 
@@ -61,7 +66,7 @@ ul {
 .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #7e7e7e;
+    color: #fff;
     line-height: 28px;
 }
 
@@ -138,7 +143,7 @@ ul {
 }
 
 .footer-widget ul li a {
-    color: #878787;
+    color: #fff;
     text-transform: capitalize;
 }
 
