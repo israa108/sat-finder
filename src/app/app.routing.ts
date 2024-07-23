@@ -5,7 +5,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { ComponentsComponent } from "./components/components.component";
-import { NucleoiconsComponent } from "./components/nucleoicons/nucleoicons.component";
 import { BenefitsComponent } from "./ojo/benefits/benefits.component";
 import { AboutUsComponent } from "./ojo/about-us/about-us.component";
 import { CorpsComponent } from "./ojo/products/corps/corps.component";
@@ -27,7 +26,6 @@ import { InformationComponent } from "./ojo/industries/information/information.c
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: ComponentsComponent },
-  { path: "nucleoicons", component: NucleoiconsComponent },
   { path: "ojo/about-us", component: AboutUsComponent },
   { path: "ojo/contact-us", component: ContactUsComponent },
   { path: "ojo/benefits", component: BenefitsComponent },

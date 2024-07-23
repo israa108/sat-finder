@@ -1,8 +1,14 @@
+.description {
+    color: black;
+}
+
+
 /* OUR VALUE */
 
-.service-grid {
-    /* background: #fcfcfc; */
-}
+
+/* .service-grid {
+    background: #fcfcfc;
+} */
 
 .service-title h4 {
     position: relative;
