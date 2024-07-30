@@ -22,10 +22,12 @@ import { MaintanenceComponent } from "./ojo/industries/maintanence/maintanence.c
 import { LogisticsComponent } from "./ojo/industries/logistics/logistics.component";
 import { FastMpvingComponent } from "./ojo/industries/fast-mpving/fast-mpving.component";
 import { InformationComponent } from "./ojo/industries/information/information.component";
+import { SatFinderComponent } from "./sat-finder/sat-finder/sat-finder.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: ComponentsComponent },
+  { path: "sat-finder", component: SatFinderComponent },
   { path: "ojo/about-us", component: AboutUsComponent },
   { path: "ojo/contact-us", component: ContactUsComponent },
   { path: "ojo/benefits", component: BenefitsComponent },

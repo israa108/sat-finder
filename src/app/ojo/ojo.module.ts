@@ -59,7 +59,7 @@ import { PharmaceuticalsComponent } from "./industries/pharmaceuticals/pharmaceu
     NouisliderModule,
     JwBootstrapSwitchNg2Module,
     AgmCoreModule.forRoot({
-      apiKey: "YOUR_KEY_HERE",
+      apiKey: "",
     }),
     NzTabsModule,
     NzButtonModule,
