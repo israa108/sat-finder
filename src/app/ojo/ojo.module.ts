@@ -6,7 +6,6 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { AgmCoreModule } from "@agm/core";
 import { RouterModule } from "@angular/router";
-import { ComponentsModule } from "../components/components.module";
 
 import { BenefitsComponent } from "./benefits/benefits.component";
 import { FieldStaffComponent } from "./products/field-staff/field-staff.component";
@@ -29,7 +28,12 @@ import { MaintanenceComponent } from "./industries/maintanence/maintanence.compo
 import { PackageComponent } from "./industries/package/package.component";
 import { FastMpvingComponent } from "./industries/fast-mpving/fast-mpving.component";
 import { PharmaceuticalsComponent } from "./industries/pharmaceuticals/pharmaceuticals.component";
-
+import { NavbarComponent } from "app/shared/navbar/navbar.component";
+import { BrandsComponent } from "app/shared/brands/brands.component";
+import { UsersComponent } from "app/shared/users/users.component";
+import { FooterComponent } from "app/shared/footer/footer.component";
+import { ComponentsComponent } from "./components/components.component";
+import { AppRoutingModule } from "app/app.routing";
 @NgModule({
   declarations: [
     BenefitsComponent,
@@ -50,12 +54,17 @@ import { PharmaceuticalsComponent } from "./industries/pharmaceuticals/pharmaceu
     PackageComponent,
     FastMpvingComponent,
     PharmaceuticalsComponent,
+    NavbarComponent,
+    BrandsComponent,
+    UsersComponent,
+    FooterComponent,
+    ComponentsComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
-    ComponentsModule,
     NgbModule,
+    AppRoutingModule,
     NouisliderModule,
     JwBootstrapSwitchNg2Module,
     AgmCoreModule.forRoot({

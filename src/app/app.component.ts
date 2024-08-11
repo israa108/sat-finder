@@ -14,6 +14,7 @@ import { BrandsComponent } from "./shared/brands/brands.component";
 import { filter, Subscription } from "rxjs";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { UsersComponent } from "./shared/users/users.component";
+import { NavComponent } from "./argo-x/shared/nav/nav.component";
 
 @Component({
   selector: "app-root",
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit {
   @ViewChild(BrandsComponent) brands: BrandsComponent;
   @ViewChild(FooterComponent) footer: FooterComponent;
   @ViewChild(UsersComponent) users: UsersComponent;
+  @ViewChild(NavComponent) nav: NavComponent;
 
   constructor(
     private renderer: Renderer2,
@@ -34,6 +36,7 @@ export class AppComponent implements OnInit {
     private element: ElementRef,
     public location: Location
   ) {}
+
   ngOnInit() {
     var navbar: HTMLElement =
       this.element.nativeElement.children[0].children[0];

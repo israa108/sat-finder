@@ -4,7 +4,6 @@ import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
-import { ComponentsComponent } from "./components/components.component";
 import { BenefitsComponent } from "./ojo/benefits/benefits.component";
 import { AboutUsComponent } from "./ojo/about-us/about-us.component";
 import { CorpsComponent } from "./ojo/products/corps/corps.component";
@@ -23,9 +22,19 @@ import { LogisticsComponent } from "./ojo/industries/logistics/logistics.compone
 import { FastMpvingComponent } from "./ojo/industries/fast-mpving/fast-mpving.component";
 import { InformationComponent } from "./ojo/industries/information/information.component";
 import { SatFinderComponent } from "./sat-finder/sat-finder/sat-finder.component";
+import { CommercialHomeComponent } from "./argo-x/commercial/commercial-home/commercial-home.component";
+import { ApplicationsComponent } from "./argo-x/commercial/applications/applications.component";
+import { ControlRoomsComponent } from "./argo-x/commercial/control-rooms/control-rooms.component";
+import { KeyAspectsComponent } from "./argo-x/commercial/key-aspects/key-aspects.component";
+import { CommercialBenefitsComponent } from "./argo-x/commercial/commercial-benefits/commercial-benefits.component";
+import { MilitaryComponent } from "./argo-x/military/military.component";
+import { MilitaryBenefitsComponent } from "./argo-x/military/military-benefits/military-benefits.component";
+import { MilitaryApplicationsComponent } from "./argo-x/military/military-applications/military-applications.component";
+import { MilitaryControlComponent } from "./argo-x/military/military-control/military-control.component";
+import { ComponentsComponent } from "./ojo/components/components.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "", redirectTo: "sat-finder", pathMatch: "full" },
   { path: "home", component: ComponentsComponent },
   { path: "sat-finder", component: SatFinderComponent },
   { path: "ojo/about-us", component: AboutUsComponent },
@@ -58,6 +67,48 @@ const routes: Routes = [
   {
     path: "ojo/industries/pharmaceuticals",
     component: PharmaceuticalsComponent,
+  },
+
+  // AGRO-X
+  // commercial
+  {
+    path: "argo-x/commercial/commercial-home",
+    component: CommercialHomeComponent,
+  },
+  {
+    path: "argo-x/commercial/commercial-benefits",
+    component: CommercialBenefitsComponent,
+  },
+  {
+    path: "argo-x/commercial/applications",
+    component: ApplicationsComponent,
+  },
+  {
+    path: "argo-x/commercial/control-rooms",
+    component: ControlRoomsComponent,
+  },
+  {
+    path: "argo-x/commercial/key-aspects",
+    component: KeyAspectsComponent,
+  },
+
+  // AGRO-X
+  // Military
+  {
+    path: "argo-x/military/military",
+    component: MilitaryComponent,
+  },
+  {
+    path: "argo-x/military/military-benefits",
+    component: MilitaryBenefitsComponent,
+  },
+  {
+    path: "argo-x/military/military-applications",
+    component: MilitaryApplicationsComponent,
+  },
+  {
+    path: "argo-x/military/military-control",
+    component: MilitaryControlComponent,
   },
 ];
 

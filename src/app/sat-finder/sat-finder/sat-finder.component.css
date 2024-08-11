@@ -1,26 +1,148 @@
-.video-wrapper {
-    /* Telling our absolute positioned video to
-be relative to this element */
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* Will not allow the video to overflow the
-container */
-    overflow: hidden;
-    /* Centering the container's content vertically
-and horizontally */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 video {
-    /** Simulationg background-size: cover */
     object-fit: cover;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding: 0 100px;
+    width: 88%;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar .logo {
+    float: left;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.navbar a:hover {
+    /* background-color: #fff; */
+    color: #202020;
+}
+
+.header-text {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 9998;
+}
+
+.text-content h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.text-content p {
+    width: 75%;
+    margin: auto;
+    line-height: 1.9;
+}
+
+.text-content a {
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #202020;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.text-content a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar .logo {
+        float: none;
+        margin-right: 0;
+        font-size: 35px;
+    }
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .navbar a {
+        font-size: 18px;
+        padding: 5px 25px;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    .text-content h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar a {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+    .text-content h3 {
+        margin-bottom: 10px;
+    }
+    .text-content h1 {
+        font-size: 28px;
+    }
+    .text-content p {
+        width: 100%;
+        margin: 15px auto;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .text-content a {
+        padding: 5px 15px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
 }
