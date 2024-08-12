@@ -14,7 +14,7 @@ import { BrandsComponent } from "./shared/brands/brands.component";
 import { filter, Subscription } from "rxjs";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { UsersComponent } from "./shared/users/users.component";
-import { NavComponent } from "./argo-x/shared/nav/nav.component";
+import { NavCommercialComponent } from "./shared/nav-commercial/nav-commercial.component";
 
 @Component({
   selector: "app-root",
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   @ViewChild(BrandsComponent) brands: BrandsComponent;
   @ViewChild(FooterComponent) footer: FooterComponent;
   @ViewChild(UsersComponent) users: UsersComponent;
-  @ViewChild(NavComponent) nav: NavComponent;
+  @ViewChild(NavCommercialComponent) navcommercisl: NavCommercialComponent;
 
   constructor(
     private renderer: Renderer2,

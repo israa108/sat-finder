@@ -5,8 +5,8 @@ import { CommercialBenefitsComponent } from "./commercial-benefits/commercial-be
 import { ApplicationsComponent } from "./applications/applications.component";
 import { ControlRoomsComponent } from "./control-rooms/control-rooms.component";
 import { KeyAspectsComponent } from "./key-aspects/key-aspects.component";
-import { SharedModule } from "../shared/shared.module";
 import { AppRoutingModule } from "app/app.routing";
+import { NavCommercialComponent } from "app/shared/nav-commercial/nav-commercial.component";
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { AppRoutingModule } from "app/app.routing";
     CommercialBenefitsComponent,
     ControlRoomsComponent,
     KeyAspectsComponent,
+    NavCommercialComponent,
   ],
-  imports: [CommonModule, RouterModule, SharedModule, AppRoutingModule],
+  imports: [CommonModule, RouterModule, AppRoutingModule],
 })
 export class CommercialModule {}

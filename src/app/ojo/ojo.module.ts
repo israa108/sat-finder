@@ -34,6 +34,7 @@ import { UsersComponent } from "app/shared/users/users.component";
 import { FooterComponent } from "app/shared/footer/footer.component";
 import { ComponentsComponent } from "./components/components.component";
 import { AppRoutingModule } from "app/app.routing";
+
 @NgModule({
   declarations: [
     BenefitsComponent,
