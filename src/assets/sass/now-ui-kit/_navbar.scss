@@ -87,6 +87,7 @@
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;
+        height: 100%;
     }
     .navbar-toggler {
         width: 37px;
@@ -113,7 +114,7 @@
         // background-color: $transparent-bg !important;
         box-shadow: none;
         color: $white-color;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     &.bg-white:not(.navbar-transparent) {
         a:not(.dropdown-item) {

@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
         } else {
           window.document.activeElement.scrollTop = 0;
         }
-        this.navbar.sidebarClose();
+        // this.navbar.sidebarClose();
 
         this.renderer.listen("window", "scroll", (event) => {
           const number = window.scrollY;
@@ -56,13 +56,13 @@ export class AppComponent implements OnInit {
           _location = _location.split("/")[2];
 
           if (number > 150 || window.pageYOffset > 150) {
-            navbar.classList.remove("navbar-transparent");
+            // navbar.classList.remove("navbar-transparent");
           } else if (
             _location !== "login" &&
             this.location.path() !== "/nucleoicons"
           ) {
             // remove logic
-            navbar.classList.add("navbar-transparent");
+            // navbar.classList.add("navbar-transparent");
           }
         });
       });

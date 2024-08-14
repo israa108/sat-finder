@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { BrandsComponent } from "app/shared/brands/brands.component";
 
 @Component({
   selector: "app-commercial",
@@ -7,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CommercialComponent implements OnInit {
   constructor() {}
+  @ViewChild(BrandsComponent) brands: BrandsComponent;
 
   ngOnInit(): void {}
 }
