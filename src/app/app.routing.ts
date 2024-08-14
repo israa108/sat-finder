@@ -32,6 +32,8 @@ import { MilitaryBenefitsComponent } from "./argo-x/military/military-benefits/m
 import { MilitaryApplicationsComponent } from "./argo-x/military/military-applications/military-applications.component";
 import { MilitaryControlComponent } from "./argo-x/military/military-control/military-control.component";
 import { ComponentsComponent } from "./ojo/components/components.component";
+import { NotFoundComponent } from "./shared/not-found/not-found.component";
+import { FooterArgoXComponent } from "./shared/footer-argo-x/footer-argo-x.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "sat-finder", pathMatch: "full" },
@@ -109,6 +111,14 @@ const routes: Routes = [
   {
     path: "argo-x/military/military-control",
     component: MilitaryControlComponent,
+  },
+  {
+    path: "shared/footer-argo-x",
+    component: FooterArgoXComponent,
+  },
+  {
+    path: "**",
+    component: NotFoundComponent,
   },
 ];
 
